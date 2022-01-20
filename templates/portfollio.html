@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Portfollio{% endblock title %}
+
+{% block content %}
+    <section class="portfollio-title">
+        <h1>Portfollio</h1>
+    </section>
+    <div class="row">
+        {% for photo in photos %}
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          
+            <img  id="individual" src="{{photo.image.url}}" class="img-fluid rounded" alt="{{photo.title}}" />
+        
+        </div>
+        {% endfor %}
+      </div>
+{% endblock content %}k 

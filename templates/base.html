@@ -1,0 +1,54 @@
+{% load django_bootstrap5%}
+{% load static %}
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"  type="text/css" href="{% static 'photography/css/style.css' %}">
+    <script src="https://kit.fontawesome.com/9f61a45b3f.js" crossorigin="anonymous"></script>
+
+    {% block title %}
+    <title>HomePage</title>
+    {% endblock title %}
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+<body>
+
+    <header> 
+         <a class="header-brand" href="{% url 'photography:home' %}"><i class="fas fa-camera-retro"> Basave Photography</i></a>
+
+        <nav>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="{% url 'photography:list' %}"><i class="fas fa-folder-open"> Portfollio</i></a>
+                    </li>
+                    <li>
+                        <a href="{% url 'photography:about' %}"><i class="fas fa-user-circle"> About Me</i></a>
+                    </li>
+                    <li class="last-link">
+                        <a href="{% url 'photography:contact' %}"><i class="fas fa-mobile"> Contact</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>             
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %} 
+    </main>
+
+</body>
+</html>

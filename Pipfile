@@ -7,6 +7,7 @@ name = "pypi"
 Django = "*"
 Pillow = "*"
 django-bootstrap5 = "*"
+python-decouple = "*"
 
 [dev-packages]
 

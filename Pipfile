@@ -9,6 +9,7 @@ Pillow = "*"
 django-bootstrap5 = "*"
 python-decouple = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 

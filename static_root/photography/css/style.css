@@ -1,0 +1,466 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* End of stylesheet reset. */
+
+/* Start of my code. */
+
+* {
+    text-decoration: none;
+}
+
+html {
+    background-color: #F6F6F3;
+}
+
+body {
+    background-color: #fff;
+}
+
+main {
+    padding-top: 76px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #FFF;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #111;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #95C5C8;
+}
+
+header a:active {
+    text-decoration: underline;
+    color: #95C5C8;
+}
+
+header .header-brand {
+    font-family: 'Besley', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+}
+
+header nav ul {
+    margin: 0 auto;
+    display: center;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 16px;
+}
+
+header nav ul li a {
+    font-family: 'Besley', serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+}
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+}
+
+    header nav ul li a {
+        line-height: 60px;
+}
+}
+
+@media only screen and (max-width: 998px) {
+
+    header .header-brand {
+        padding: 0;
+        border-bottom: 2px solid black
+}
+    
+    header nav{
+        height: 64px;
+        width: 100vw;
+    }
+
+    header nav ul {
+        margin-top: 14px
+}
+
+    header nav ul li a {
+        font-size: 14px;
+       
+       
+}
+}
+
+@media only screen and (max-width: 462px) {
+
+    header nav ul {
+        margin-top: 6px;
+        padding-left: 14%
+}
+
+    header nav ul li a {
+        font-size: 12px      
+}
+    header nav ul .last-link {
+        padding-left: 28.5%;
+        padding-right: 25%;
+}
+}
+
+/* Index */
+
+.home-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('../../../../media/banner/try2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-banner h1 {
+    font-family: 'Besley', serif;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    line-height: 70px;
+    text-shadow: 2px 2px 8px #111;
+
+}
+
+.home-banner h5 {
+    font-family: 'Besley', serif;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    text-shadow: 2px 2px 8px #111;
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .index-banner {
+        width: 100%;
+        height: 450px;
+}
+
+    .index-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+}
+}
+
+/* Contact Page */
+
+.picture-body {
+    width: 50%;
+    float:right;
+    height: calc(100vh - 100px);
+    background-image: url('../../../../media/banner/try4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    border: 3px solid green;
+    
+}
+
+.contact-body {
+    width: 50%;
+    height: 660px;
+    float: left;
+    background-color: #F6F6F3;
+    
+}
+
+.contact-body h5 {
+    font-family: 'Besley', serif;
+    font-size: 50px;
+    color: #111;
+    text-align: center;
+    font-weight: 900;
+    line-height: 70px;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.contact-body h6 {
+    font-family: 'Besley', serif;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    font-size: 2vw;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40);
+}
+
+@media only screen and (min-width: 10000px) {
+
+    .contact-body {
+        width: 50%;
+        height: 100%;
+}
+
+    .contact-body h5 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+}
+    .contact-body h6 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+}
+}
+
+@media only screen and (max-width: 10000px) {
+    
+    .contact-body h6 {
+       width: 50%;
+       font-size: 14px;
+       position: absolute;
+       top: 35%;
+       transform: translateY(-30%);
+       
+}
+    .contact-body h5 {
+        width: 50%;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-40%);
+}
+
+
+@media only screen and (max-width: 460px) {
+    
+    .contact-body h6 {
+       width: 50%;
+}
+    .contact-body h5 {
+        width: 50%;
+        font-size: 10px;
+}
+        
+}
+
+/* About page. */
+
+.picture-body2 {
+    width: 50%;
+    float:left;
+    height: calc(100vh - 100px);
+    background-image: url('../../../../media/banner/try3.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: table;
+    border: 3px solid green;
+}
+
+.about-body {
+    width: 50%;
+    height: 660px;
+    float: right;
+    background-color: #F6F6F3;
+}
+
+.about-title {
+    font-family: 'Besley', serif;
+    font-size: 50px;
+    color: #111;
+    text-align: center;
+    font-weight: 100;
+    line-height: 70px;
+    font-size: 2.5vw;
+    padding-top: 25px;
+}
+
+.about-description {
+    font-family: 'Besley', serif;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    font-size: 2vw;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.portfollio-title {
+    font-family: 'Besley', serif;
+    font-size: 50px;
+    color: #111;
+    text-align: center;
+    font-weight: 100;
+    line-height: 70px;
+    font-size: 2.5vw;
+    padding-top: 25px;
+}
+
+@media only screen and (max-height: 800px) {
+    .about-description{
+        position: absolute;
+        top: 40%;
+        transform: translateY(-20%);
+}
+}
+
+@media only screen and (min-height: 801px) {
+    .about-body {
+        height: 886px;
+    }
+    
+}
+#individual {
+    margin-top: 25px;
+}
+}

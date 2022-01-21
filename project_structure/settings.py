@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # Static addition.
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'photography/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'live-static')]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

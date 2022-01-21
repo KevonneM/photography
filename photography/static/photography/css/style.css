@@ -239,7 +239,7 @@ header nav ul li a {
 .home-banner {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url('../../../../media/banner/try2.jpg');
+    background-image: url('/static_root/media/banner/try3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

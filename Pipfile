@@ -10,6 +10,7 @@ django-bootstrap5 = "*"
 python-decouple = "*"
 gunicorn = "*"
 whitenoise = "*"
+django = "*"
 
 [dev-packages]
 
